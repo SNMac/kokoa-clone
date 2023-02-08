@@ -1,0 +1,80 @@
+@keyframes circleRotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes squareShrink {
+  0%{
+    transform: scaleY(1)
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1)
+  }
+  100% {
+  }
+}
+
+body {
+  background-color: rgb(144, 184, 189);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#row_circle {
+  margin-bottom: 100px;
+  animation: circleRotate 1s ease-in-out infinite;
+}
+
+.circle {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.square {
+  display: inline-block;
+  background-color: white;
+  width: 10px;
+  height: 40px;
+}
+
+.first {
+  animation: squareShrink 1s ease-in-out infinite;
+}
+
+.second {
+  animation: squareShrink 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.third {
+  animation: squareShrink 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.fourth {
+  animation: squareShrink 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.fifth {
+  animation: squareShrink 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
